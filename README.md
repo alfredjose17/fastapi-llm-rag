@@ -113,12 +113,11 @@ All AI models and settings are in `rag/config.py`:
 
 ```python
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
-llm = OllamaLLM(model="llama3", temperature=0.1)
+llm = OllamaLLM(model="llama3")
 ```
 
 | Parameter | Default | Effect |
 |-----------|---------|--------|
-| `temperature` | 0.1 | Lower = more factual, less creative |
 | `chunk_size` | 500 | Smaller = more precise retrieval |
 | `chunk_overlap` | 50 | Higher = less context lost at boundaries |
 | `top_k` | 5 | More chunks = more context for the LLM |
